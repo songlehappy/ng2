@@ -7,12 +7,18 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent } from './heroes.component';
 import { DashboardComponent } from './dashboard.component';
+
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
+
+import { AstronautComponent } from './ser/astronaut.component';
+import { MissionControlComponent } from './ser/missioncontrol.component';
 
 import { HeroService } from './hero.service';
 
@@ -21,7 +27,11 @@ import { HeroService } from './hero.service';
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    ParentComponent,
+    ChildComponent,
+    MissionControlComponent,
+    AstronautComponent
   ],
   imports: [
     BrowserModule,
